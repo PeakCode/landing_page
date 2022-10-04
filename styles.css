@@ -56,17 +56,18 @@ a {
    display: flex;
    flex-direction: row;
    justify-content: space-between;
-   align-items:flex-start;
+   flex-wrap: wrap;
    margin: 50px 0;
-   flex: 1;
+   flex-shrink: 2;
 }
 
 .header_main_text{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0;
     padding: 0;
+    margin-right: 30px;
+    flex: 1;
 }
 
 .hero_main_text{
@@ -96,17 +97,22 @@ button{
     border-radius: 4px;
     font-size: 12px;
     font-weight: 300;
-    border:2px solid white;
+    border: 2px solid white;
     padding: 5px 15px;
 }
 
 .header_main_image{
     display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    flex: 1;
+    min-width: 400px;
+    padding-top: 10px;
 }
 
 img {
     max-height: 300px;
-    max-width: 500px;
+    width: 100%;
 }
 
 .info {
